@@ -8,8 +8,13 @@ body {
     text-align: center;
 }
 
-/* this belongs to the list of cities */
-.list-group {
+/* search input */
+#search-form {
+    float: left;
+}
+
+/* this belongs to the list of cities and the search for city button ... how to I get the list card to go underneath search for city?*/
+.list-group, .search {
     float: left;
 }
 
@@ -17,3 +22,7 @@ body {
 .one {
     float: right;
 } 
+
+.mb-3 {
+    float: left;
+}

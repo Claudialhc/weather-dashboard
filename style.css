@@ -1,0 +1,19 @@
+/* The background color was originally placed to make sure css was properly linked to html but I liked it so I kept it */
+body {
+    background-color: rgb(248, 177, 189);
+}
+
+/* This text-align is to make the words on the Jumbotron populate on the center. */
+.container {
+    text-align: center;
+}
+
+/* this belongs to the list of cities */
+.list-group {
+    float: left;
+}
+
+/* how do I get this to expand? */
+.one {
+    float: right;
+} 

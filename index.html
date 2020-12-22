@@ -27,11 +27,12 @@
       </div>
     </div>
 <!--get rows-->
-    <div class="container">
+    <div class="container row" id="cast">
         <div class="col-md">
-            <div class="card weather-card bg-light text-dark mb-4">
-                <div class="card-body">
-                    <h2 id="city-name" class="card-title h4">Choose City</h2>
+          <div class="card weather-card bg-light text-dark mb-4">
+            <div class="card-body">
+              <h2 id="city-name" class="card-title h4">Choose City</h2>
+              
                     <hr class="border-top border-dark">
                     <div id="weather-icon"></div>
                     <p class="card-text">Current Temp (F): <span id="temp">-</span></p>
@@ -42,10 +43,53 @@
             </div>
         </div>
       <br><br><br><br>
-      <h4 class="one">5-Day Forecast:</h4>
+      <div class="col-md row">
+        <div class="card weather-card bg-light text-dark mb-4">
+            <div class="card-body">
+                <h4 class="one">5-Day Forecast:</h4>
+                <h6>Day 1</h2>
+                <div id="weather-icon"></div>
+                <p class="card-text">Current Temp (F): <span id="forecast-temp1">-</span></p>
+                <p class="card-text">Humidity: <span id="forecast-humidity1">-</span></p>
+            </div>
+        </div>
+        <div class="card weather-card bg-light text-dark mb-4 row">
+          <div class="card-body">
+            <h6>Day 2</h2>
+              <div id="weather-icon"></div>
+              <p class="card-text">Current Temp (F): <span id="forecast-temp2">-</span></p>
+              <p class="card-text">Humidity: <span id="forecast-humidity2">-</span></p>
+          </div>
+      </div>
+      <div class="card weather-card bg-light text-dark mb-4 row">
+        <div class="card-body">
+          <h6>Day 3</h2>
+            <div id="weather-icon"></div>
+            <p class="card-text">Current Temp (F): <span id="forecast-temp3">-</span></p>
+            <p class="card-text">Humidity: <span id="forecast-humidity3">-</span></p>
+        </div>
+    </div>
+    <div class="card weather-card bg-light text-dark mb-4 row">
+      <div class="card-body">
+        <h6>Day 4</h2>
+          <div id="weather-icon"></div>
+          <p class="card-text">Current Temp (F): <span id="forecast-temp4">-</span></p>
+          <p class="card-text">Humidity: <span id="forecast-humidity4">-</span></p>
+      </div>
+    </div>
+    <div class="card weather-card bg-light text-dark mb-4 row">
+      <div class="card-body">
+        <h6>Day 5</h2>
+          <div id="weather-icon"></div>
+          <p class="card-text">Current Temp (F): <span id="forecast-temp5">-</span></p>
+          <p class="card-text">Humidity: <span id="forecast-humidity5">-</span></p>
+      </div>
+    </div>
+  </div>
+    </div>
     </div>
 
-    <div class="container">
+    <div class="container row">
         <form id="search-form">
             <div class="form-group">
                 <label for="search-input">Search for a city</label>
@@ -60,12 +104,14 @@
       </div>
       <!-- do I need columns or is this okay?-->
       <br /><br />
-      <div class="row mt-5">
+      <div class="row mt-2">
         <div class="col-md">
             <div class="card mb-3">
                 <div class="card-body">
+                  <h3 class="card-subtitle h6 font-weight-normal mb-3 text-muted">Click on a city to view the weather</h3>
                     <!-- the data-city attribute is used in the search for
                     the weather from OpenWeather API -->
+
                     <button data-city="San Diego" class="city btn btn-outline-dark btn-block">
                         San Diego
                     </button>

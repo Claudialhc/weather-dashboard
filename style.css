@@ -16,12 +16,12 @@ body {
 /* this belongs to the list of cities and the search for city button ... how to I get the list card to go underneath search for city?*/
 .list-group, .search {
     float: left;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
-/* how do I get this to expand? */
-.one {
-    float: right;
-} 
+
 
 .mb-3 {
     float: left;

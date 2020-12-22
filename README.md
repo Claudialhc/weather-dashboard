@@ -38,5 +38,7 @@ var queryUrl =
       $("#forecast-humidity5").text(data.list[32].main.humidity + " %");
     });
 ```
+The app comes in handy for when you are planning to travel to another city and want to know the weather of your destination to be able to pack accordingly.
+
 
 Deployed URL: https://claudialhc.github.io/weather-dashboard/
